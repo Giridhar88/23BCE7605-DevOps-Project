@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout :: head(~{::title})}">
+    <title>Portfolio - PixelForge Studio</title>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header th:replace="~{layout :: header('portfolio')}"></header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Portfolio Page Header -->
+        <section id="portfolio-intro" class="hero" style="min-height: auto; padding-top: 140px; padding-bottom: 3rem;">
+            <div class="bg-grid"></div>
+            <div class="container text-center" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 class="text-gradient" style="font-size: 3.5rem; margin-bottom: 1.5rem;">Our Crafted Works</h1>
+                <p style="font-size: 1.2rem; color: var(--text-secondary);">Explore how we combine beautiful typography, layout logic, and engineering infrastructure to launch projects that matter.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Filtering & Cards Section -->
+        <section id="portfolio-showcase" class="section-padding" style="padding-top: 2rem;">
+            <div class="container">
+                
+                <!-- Filters Nav -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Dev</button>
+                    <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="devops">Cloud & DevOps</button>
+                </div>
+                
+                <!-- Cards Grid -->
+                <div class="portfolio-grid">
+                    
+                    <!-- Card 1: Vortex Portal -->
+                    <div class="portfolio-card glassmorphism" data-category="web">
+                        <div class="portfolio-img-container">
+                            <span class="portfolio-category-badge">Web Dev</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <path d="M100 80h200v90H100z" fill="#1e293b" rx="8"/>
+                                <circle cx="200" cy="125" r="40" stroke="#00f0ff" stroke-width="2" stroke-dasharray="6 3"/>
+                                <text x="200" y="130" fill="#00f0ff" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" text-anchor="middle">Vortex Portal</text>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-tech-list">
+                                <span class="portfolio-tech-badge">Spring Boot</span>
+                                <span class="portfolio-tech-badge">CSS Grid</span>
+                                <span class="portfolio-tech-badge">Vanilla JS</span>
+                            </div>
+                            <h3>Vortex Portal</h3>
+                            <p>Real-time analytics administration panel utilizing WebSockets and modern data charts representation.</p>
+                            <button class="btn btn-secondary" onclick="alert('Project details: Vortex Portal is a real-time analytics engine deployed for ApexData.')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Aether App -->
+                    <div class="portfolio-card glassmorphism" data-category="uiux">
+                        <div class="portfolio-img-container">
+                            <span class="portfolio-category-badge">UI/UX Design</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <circle cx="200" cy="120" r="50" fill="#1e293b"/>
+                                <path d="M150 160h100v10H150z" fill="#3b82f6" rx="4"/>
+                                <path d="M175 145h50v8H175z" fill="#8b5cf6" rx="3"/>
+                                <text x="200" y="125" fill="#3b82f6" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" text-anchor="middle">Aether App</text>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-tech-list">
+                                <span class="portfolio-tech-badge">Figma</span>
+                                <span class="portfolio-tech-badge">Prototype</span>
+                                <span class="portfolio-tech-badge">Design System</span>
+                            </div>
+                            <h3>Aether Mobile App</h3>
+                            <p>Premium dark-themed user interface designed for a revolutionary neo-banking mobile platform.</p>
+                            <button class="btn btn-secondary" onclick="alert('Project details: Aether App is a design exploration for multi-token mobile wallets.')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Nova Container Engine -->
+                    <div class="portfolio-card glassmorphism" data-category="devops">
+                        <div class="portfolio-img-container">
+                            <span class="portfolio-category-badge">Cloud & DevOps</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <rect x="80" y="60" width="240" height="130" fill="#1e293b" rx="10"/>
+                                <path d="M180 90h40v10h-40zM180 115h40v10h-40zM180 140h40v10h-40z" fill="#00f0ff" opacity="0.7"/>
+                                <text x="200" y="175" fill="#e2e8f0" font-family="'Outfit', sans-serif" font-size="12" text-anchor="middle">Terraform Pipeline</text>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-tech-list">
+                                <span class="portfolio-tech-badge">AWS</span>
+                                <span class="portfolio-tech-badge">Terraform</span>
+                                <span class="portfolio-tech-badge">Kubernetes</span>
+                            </div>
+                            <h3>Nova Container Engine</h3>
+                            <p>Scalable orchestration layer deploying service microstructures in zero-downtime environments.</p>
+                            <button class="btn btn-secondary" onclick="alert('Project details: Nova Container Engine scales nodes dynamically using infrastructure-as-code.')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Zenith E-Commerce -->
+                    <div class="portfolio-card glassmorphism" data-category="web">
+                        <div class="portfolio-img-container">
+                            <span class="portfolio-category-badge">Web Dev</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <rect x="120" y="70" width="160" height="110" fill="#1e293b" rx="6"/>
+                                <path d="M140 100h60v10h-60zM140 125h120v10H140z" fill="#8b5cf6" opacity="0.8"/>
+                                <text x="200" y="165" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" text-anchor="middle">Zenith Store</text>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-tech-list">
+                                <span class="portfolio-tech-badge">Java 21</span>
+                                <span class="portfolio-tech-badge">Alpine Linux</span>
+                                <span class="portfolio-tech-badge">Stripe API</span>
+                            </div>
+                            <h3>Zenith E-Commerce</h3>
+                            <p>High-speed e-commerce checkout engine featuring atomic stock locks and 100ms load speeds.</p>
+                            <button class="btn btn-secondary" onclick="alert('Project details: Zenith Store handles massive concurrent transactions during flash sales.')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Nebula Audio Player -->
+                    <div class="portfolio-card glassmorphism" data-category="mobile">
+                        <div class="portfolio-img-container">
+                            <span class="portfolio-category-badge">Mobile Apps</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <circle cx="200" cy="110" r="50" fill="#1e293b" stroke="#00f0ff" stroke-width="2"/>
+                                <path d="M190 95v30l25-15z" fill="#00f0ff"/>
+                                <text x="200" y="195" fill="#9ca3af" font-family="sans-serif" font-size="12" text-anchor="middle">Streaming Engine</text>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-tech-list">
+                                <span class="portfolio-tech-badge">SwiftUI</span>
+                                <span class="portfolio-tech-badge">AVFoundation</span>
+                                <span class="portfolio-tech-badge">iOS Client</span>
+                            </div>
+                            <h3>Nebula Audio Player</h3>
+                            <p>Mobile native iOS client utilizing CoreAudio to buffer and stream lossless files seamlessly.</p>
+                            <button class="btn btn-secondary" onclick="alert('Project details: Nebula Streams lossless FLAC audio files with local cache controls.')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Orion Analytics API -->
+                    <div class="portfolio-card glassmorphism" data-category="web">
+                        <div class="portfolio-img-container">
+                            <span class="portfolio-category-badge">Web Dev</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <text x="200" y="100" fill="#00f0ff" font-family="monospace" font-size="18" text-anchor="middle">GET /api/v2/orion</text>
+                                <path d="M80 130h240v5H80z" fill="#1e293b"/>
+                                <circle cx="150" cy="132" r="8" fill="#3b82f6"/>
+                                <circle cx="250" cy="132" r="8" fill="#8b5cf6"/>
+                                <text x="200" y="170" fill="#9ca3af" font-family="sans-serif" font-size="12" text-anchor="middle">Token Validation Core</text>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-tech-list">
+                                <span class="portfolio-tech-badge">REST API</span>
+                                <span class="portfolio-tech-badge">JWT</span>
+                                <span class="portfolio-tech-badge">OAuth2</span>
+                            </div>
+                            <h3>Orion Analytics API</h3>
+                            <p>Secure micro-validation gateway verifying access keys for external marketing automations.</p>
+                            <button class="btn btn-secondary" onclick="alert('Project details: Orion API processes secure tokens for client marketing servers.')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Helios CI/CD Runner -->
+                    <div class="portfolio-card glassmorphism" data-category="devops">
+                        <div class="portfolio-img-container">
+                            <span class="portfolio-category-badge">Cloud & DevOps</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <rect x="100" y="60" width="200" height="130" stroke="#8b5cf6" stroke-width="2" rx="10"/>
+                                <path d="M120 100l30 30-30 30" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+                                <text x="170" y="135" fill="#8b5cf6" font-family="monospace" font-size="16" font-weight="700">RUNNING...</text>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-tech-list">
+                                <span class="portfolio-tech-badge">Docker</span>
+                                <span class="portfolio-tech-badge">GitHub Actions</span>
+                                <span class="portfolio-tech-badge">Scripting</span>
+                            </div>
+                            <h3>Helios CI/CD Runner</h3>
+                            <p>Self-hosted pipeline infrastructure script caching dependencies across parallel worker jobs.</p>
+                            <button class="btn btn-secondary" onclick="alert('Project details: Helios CI/CD speeds up compilation runs by utilizing Docker buildcaches.')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Apollo Crypto Wallet -->
+                    <div class="portfolio-card glassmorphism" data-category="uiux">
+                        <div class="portfolio-img-container">
+                            <span class="portfolio-category-badge">UI/UX Design</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <path d="M120 60h160v130H120z" fill="#1e293b" rx="12"/>
+                                <circle cx="200" cy="110" r="30" fill="#00f0ff" opacity="0.3"/>
+                                <path d="M185 110h30M200 95v30" stroke="#00f0ff" stroke-width="2"/>
+                                <text x="200" y="165" fill="#00f0ff" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Apollo Wallet UI</text>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-tech-list">
+                                <span class="portfolio-tech-badge">Figma</span>
+                                <span class="portfolio-tech-badge">Interactions</span>
+                                <span class="portfolio-tech-badge">Design Guide</span>
+                            </div>
+                            <h3>Apollo Crypto Wallet</h3>
+                            <p>Interactive Figma mock and visual design mapping transaction structures for cryptocurrency transactions.</p>
+                            <button class="btn btn-secondary" onclick="alert('Project details: Apollo Wallet is a design prototype mapped out for multi-token assets.')">View Details</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer th:replace="~{layout :: footer}"></footer>
+
+    <!-- Scripts -->
+    <div th:replace="~{layout :: scripts}"></div>
+
+</body>
+</html>

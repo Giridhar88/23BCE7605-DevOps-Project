@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout :: head(~{::title})}">
+    <title>Contact Us - PixelForge Studio</title>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header th:replace="~{layout :: header('contact')}"></header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Contact Page Header -->
+        <section id="contact-intro" class="hero" style="min-height: auto; padding-top: 140px; padding-bottom: 3rem;">
+            <div class="bg-grid"></div>
+            <div class="container text-center" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 class="text-gradient" style="font-size: 3.5rem; margin-bottom: 1.5rem;">Let's Connect</h1>
+                <p style="font-size: 1.2rem; color: var(--text-secondary);">Ready to forge your next web engine or design system? Get in touch with our tech team today.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info Grid -->
+        <section id="contact-details" class="section-padding" style="padding-top: 2rem;">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Contact Details Info -->
+                    <div class="contact-info-section">
+                        <div>
+                            <h2 style="font-size: 2.25rem; margin-bottom: 2rem;">Contact Details</h2>
+                            <div class="contact-details">
+                                <!-- Address Card -->
+                                <div class="contact-detail-item">
+                                    <div class="contact-icon-wrapper"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="contact-detail-content">
+                                        <h4>Studio Office</h4>
+                                        <p>100 Cybernetic Pl, Suite 800, Silicon Valley, CA 94025</p>
+                                    </div>
+                                </div>
+
+                                <!-- Email Card -->
+                                <div class="contact-detail-item">
+                                    <div class="contact-icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="contact-detail-content">
+                                        <h4>Email Enquiries</h4>
+                                        <a href="mailto:hello@pixelforge.io">hello@pixelforge.io</a>
+                                    </div>
+                                </div>
+
+                                <!-- Phone Card -->
+                                <div class="contact-detail-item">
+                                    <div class="contact-icon-wrapper"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="contact-detail-content">
+                                        <h4>Telephone</h4>
+                                        <a href="tel:+15550198000">+1 (555) 019-8000</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Brand Socials -->
+                        <div class="contact-socials-block">
+                            <h4>Find us on GitHub & Design Boards</h4>
+                            <div class="social-icons-list">
+                                <a href="https://github.com" target="_blank" class="social-icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://linkedin.com" target="_blank" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://twitter.com" target="_blank" class="social-icon-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                                <a href="https://dribbble.com" target="_blank" class="social-icon-btn" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form Card -->
+                    <div class="contact-form-card glassmorphism">
+                        <form id="contactForm" class="contact-form">
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@company.com" required>
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="Project Consultation" required>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" rows="5" placeholder="Tell us about your build roadmap..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                Send Message 
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- Google Maps Custom Dark Mode Iframe -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.636657924409!2d-122.14815462351221!3d37.421999932870196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425da8f9%3A0x2bf12264875701a2!2sSilicon%20Valley%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer th:replace="~{layout :: footer}"></footer>
+
+    <!-- Scripts -->
+    <div th:replace="~{layout :: scripts}"></div>
+
+</body>
+</html>

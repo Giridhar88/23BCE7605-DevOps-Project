@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout :: head(~{::title})}">
+    <title>About Us - PixelForge Studio</title>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header th:replace="~{layout :: header('about')}"></header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- About Intro Section -->
+        <section id="about-intro" class="hero" style="min-height: auto; padding-top: 140px; padding-bottom: 5rem;">
+            <div class="bg-grid"></div>
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2 class="text-gradient">Forging The Digital Future Since 2021</h2>
+                    <p>PixelForge Studio was founded on a simple premise: that software should not only execute instructions reliably, but also look and feel like art. We bridge the gap between heavy computer science and fine human-machine interface design.</p>
+                    <p>We are a distributed team of engineers, UI researchers, design architects, and automation specialists. Collectively, we build resilient, high-speed ecosystems for startups and corporations globally.</p>
+                    
+                    <div class="values-grid">
+                        <div class="val-card glassmorphism">
+                            <h3><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
+                            <p>To craft bulletproof web systems that prioritize scale, performance, and memorable customer interactions.</p>
+                        </div>
+                        <div class="val-card glassmorphism">
+                            <h3><i class="fa-solid fa-eye"></i> Our Vision</h3>
+                            <p>To remain the elite choice for businesses seeking technical excellence and premium design interfaces globally.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-skills-block glassmorphism" style="padding: 2.5rem;">
+                    <h3 style="margin-bottom: 2rem; font-size: 1.5rem; text-align: left;">Our Engineering & Design Skills</h3>
+                    <div class="skills-progress">
+                        <!-- Skill 1 -->
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>Web Development (Spring Boot / Node)</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-line" data-progress="95"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Skill 2 -->
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>UI/UX Design Systems (Figma / CSS)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-line" data-progress="90"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 3 -->
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>Cloud Architecture & Kubernetes</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-line" data-progress="88"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 4 -->
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>Performance Optimization & SEO</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-line" data-progress="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Milestones Timeline -->
+        <section id="milestones" class="section-padding" style="background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); border-top: 1px solid var(--glass-border);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Company Milestones</h2>
+                    <p>A timeline of how we grew from a small workshop of developers into a premium design and engineering boutique.</p>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Milestone 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">June 2021</div>
+                        <h3 class="timeline-title">PixelForge Inception</h3>
+                        <p class="timeline-desc">Founded in California by a group of passionate backend developers and designers dedicated to producing cleaner web architectures.</p>
+                    </div>
+                    
+                    <!-- Milestone 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">March 2022</div>
+                        <h3 class="timeline-title">Series A Partner Integrations</h3>
+                        <p class="timeline-desc">Initiated contracts with 20+ scaling tech products to restructure their user interfaces and deploy cloud microservices.</p>
+                    </div>
+
+                    <!-- Milestone 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">November 2023</div>
+                        <h3 class="timeline-title">Core Engine Launch</h3>
+                        <p class="timeline-desc">Engineered our custom modular styling patterns and component frameworks (reducing frontend paint times by 40%).</p>
+                    </div>
+
+                    <!-- Milestone 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">January 2025</div>
+                        <h3 class="timeline-title">Going Fully Global</h3>
+                        <p class="timeline-desc">Expanded remote operations to 5 continental hubs, supporting real-time development in multiple time zones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Members Section -->
+        <section id="team" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet the Architects</h2>
+                    <p>The core leadership team steering PixelForge Studio towards technological and artistic excellence.</p>
+                </div>
+                
+                <div class="team-grid">
+                    <!-- Team Card 1 -->
+                    <div class="team-card glassmorphism">
+                        <div class="team-img-wrapper">
+                            <!-- SVG profile placeholder -->
+                            <svg class="team-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#1e293b"/>
+                                <circle cx="50" cy="40" r="20" fill="#00f0ff"/>
+                                <path d="M20 80c0-15 15-20 30-20s30 5 30 20v10H20V80z" fill="#00f0ff" opacity="0.6"/>
+                            </svg>
+                        </div>
+                        <h3>Alexander Cole</h3>
+                        <div class="team-role">Chief Executive Officer</div>
+                        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1.5rem;">Leading client relations and global system architectures.</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Team Card 2 -->
+                    <div class="team-card glassmorphism">
+                        <div class="team-img-wrapper">
+                            <svg class="team-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#1e293b"/>
+                                <circle cx="50" cy="40" r="20" fill="#3b82f6"/>
+                                <path d="M20 80c0-15 15-20 30-20s30 5 30 20v10H20V80z" fill="#3b82f6" opacity="0.6"/>
+                            </svg>
+                        </div>
+                        <h3>Elena Rostova</h3>
+                        <div class="team-role">Head of UI/UX Design</div>
+                        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1.5rem;">Visual researcher specializing in immersive dark formats.</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Team Card 3 -->
+                    <div class="team-card glassmorphism">
+                        <div class="team-img-wrapper">
+                            <svg class="team-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#1e293b"/>
+                                <circle cx="50" cy="40" r="20" fill="#8b5cf6"/>
+                                <path d="M20 80c0-15 15-20 30-20s30 5 30 20v10H20V80z" fill="#8b5cf6" opacity="0.6"/>
+                            </svg>
+                        </div>
+                        <h3>Devon Miller</h3>
+                        <div class="team-role">VP of Cloud Engineering</div>
+                        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1.5rem;">DevOps specialist, keeping high-availability platforms alive.</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-solid fa-server"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Team Card 4 -->
+                    <div class="team-card glassmorphism">
+                        <div class="team-img-wrapper">
+                            <svg class="team-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#1e293b"/>
+                                <circle cx="50" cy="40" r="20" fill="#00f0ff"/>
+                                <path d="M20 80c0-15 15-20 30-20s30 5 30 20v10H20V80z" fill="#00f0ff" opacity="0.4"/>
+                            </svg>
+                        </div>
+                        <h3>Siddharth Nair</h3>
+                        <div class="team-role">Senior Lead Developer</div>
+                        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1.5rem;">Java and Spring developer specializing in microservices.</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack Section -->
+        <section id="technology-stack" class="section-padding" style="background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); border-top: 1px solid var(--glass-border);">
+            <div class="container text-center" style="text-align: center;">
+                <div class="section-header">
+                    <h2>Our Technology Stack</h2>
+                    <p>We work exclusively with industry-leading, lightweight, and modern tools to engineer performant platforms.</p>
+                </div>
+                
+                <div class="tech-stack-row">
+                    <div class="tech-badge glassmorphism"><i class="fa-brands fa-java"></i> Java 21</div>
+                    <div class="tech-badge glassmorphism"><i class="fa-solid fa-leaf"></i> Spring Boot 3</div>
+                    <div class="tech-badge glassmorphism"><i class="fa-brands fa-html5"></i> Thymeleaf / HTML5</div>
+                    <div class="tech-badge glassmorphism"><i class="fa-brands fa-css3-alt"></i> Vanilla CSS3</div>
+                    <div class="tech-badge glassmorphism"><i class="fa-brands fa-js"></i> ES6 JavaScript</div>
+                    <div class="tech-badge glassmorphism"><i class="fa-brands fa-docker"></i> Docker</div>
+                    <div class="tech-badge glassmorphism"><i class="fa-brands fa-aws"></i> AWS Cloud</div>
+                    <div class="tech-badge glassmorphism"><i class="fa-solid fa-clock-rotate-left"></i> DevOps pipelines</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer th:replace="~{layout :: footer}"></footer>
+
+    <!-- Scripts -->
+    <div th:replace="~{layout :: scripts}"></div>
+
+</body>
+</html>

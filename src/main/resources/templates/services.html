@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout :: head(~{::title})}">
+    <title>Services - PixelForge Studio</title>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header th:replace="~{layout :: header('services')}"></header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Services Intro Header -->
+        <section id="services-intro" class="hero" style="min-height: auto; padding-top: 140px; padding-bottom: 3rem;">
+            <div class="bg-grid"></div>
+            <div class="container text-center" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 class="text-gradient" style="font-size: 3.5rem; margin-bottom: 1.5rem;">What We Forge</h1>
+                <p style="font-size: 1.2rem; color: var(--text-secondary);">We build high-performance web systems, gorgeous interfaces, and scalable cloud structures using clean code philosophies.</p>
+            </div>
+        </section>
+
+        <!-- Services Cards Section -->
+        <section id="services-list" class="section-padding" style="padding-top: 3rem;">
+            <div class="container">
+                <div class="services-grid" style="grid-template-columns: repeat(3, 1fr) !important; gap: 2.5rem;">
+                    
+                    <!-- Service 1 -->
+                    <div class="service-card glassmorphism">
+                        <i class="fa-solid fa-laptop-code service-icon"></i>
+                        <h3>Web Development</h3>
+                        <p>Enterprise-grade web systems built for speed, performance, and ultra-high security standards. We write clean, semantic HTML and vanilla assets, maximizing load velocity.</p>
+                        <a th:href="@{/contact}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="service-card glassmorphism">
+                        <i class="fa-solid fa-bezier-curve service-icon"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Futuristic interface styles combined with fluid interactions to offer user journeys that wow your clients. We build prototypes and comprehensive design tokens systems.</p>
+                        <a th:href="@{/contact}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glassmorphism">
+                        <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+                        <h3>Mobile Applications</h3>
+                        <p>Cross-platform and native applications built to keep your customers engaged on any mobile device. Clean UI, smooth navigations, and notification frameworks.</p>
+                        <a th:href="@{/contact}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card glassmorphism">
+                        <i class="fa-solid fa-cloud service-icon"></i>
+                        <h3>Cloud Deployment</h3>
+                        <p>Leverage cloud infrastructure on AWS, Google Cloud, or Azure. We design distributed system setups, VPC boundaries, auto-scaling patterns, and cluster engines.</p>
+                        <a th:href="@{/contact}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card glassmorphism">
+                        <i class="fa-solid fa-gears service-icon"></i>
+                        <h3>DevOps Consulting</h3>
+                        <p>Inject automation processes into your build pipelines. We configure CI/CD pipelines, Docker compilation, Kubernetes clusters, and automated systems tests run.</p>
+                        <a th:href="@{/contact}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card glassmorphism">
+                        <i class="fa-solid fa-code service-icon"></i>
+                        <h3>API Development</h3>
+                        <p>Performant RESTful and GraphQL endpoints written with strict validation, complete security tokens, and comprehensive automated documentation frameworks.</p>
+                        <a th:href="@{/contact}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 7 -->
+                    <div class="service-card glassmorphism">
+                        <i class="fa-solid fa-wrench service-icon"></i>
+                        <h3>Website Maintenance</h3>
+                        <p>Regular library version compliance updates, server checks, static file cleanups, and secure domain maintenance to guarantee high-performance uptime standards.</p>
+                        <a th:href="@{/contact}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 8 -->
+                    <div class="service-card glassmorphism">
+                        <i class="fa-solid fa-gauge-high service-icon"></i>
+                        <h3>Performance Optimization</h3>
+                        <p>Restructuring databases queries, caching headers, minifying script bundles, reducing layout paint times, and optimizing queries to hit 99+ Lighthouse scores.</p>
+                        <a th:href="@{/contact}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section with Three Plans -->
+        <section id="pricing" class="section-padding" style="background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Simple, Transparent Pricing</h2>
+                    <p>Select the package that aligns with your development and execution roadmap. No hidden fees.</p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <!-- Plan 1 -->
+                    <div class="pricing-card glassmorphism">
+                        <div class="pricing-header">
+                            <h3>Starter Plan</h3>
+                            <div class="pricing-amount">
+                                <span class="price-num">$2,499</span>
+                                <span class="price-period">/ project</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> <span>Custom Responsive Website</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>Up to 5 Pages</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>Basic SEO Setup</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>1 Month Support & Fixes</span></li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> <span>Cloud DevOps Setup</span></li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> <span>API Integration</span></li>
+                        </ul>
+                        <a th:href="@{/contact}" class="btn btn-secondary">Get Started</a>
+                    </div>
+
+                    <!-- Plan 2 -->
+                    <div class="pricing-card glassmorphism popular">
+                        <span class="popular-badge">Most Popular</span>
+                        <div class="pricing-header">
+                            <h3>Professional Plan</h3>
+                            <div class="pricing-amount">
+                                <span class="price-num">$5,999</span>
+                                <span class="price-period">/ project</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> <span>Custom Responsive Website</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>Up to 15 Pages</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>Advanced SEO & Analytics</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>3 Months Support & Fixes</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>Cloud DevOps Config (Docker)</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>REST API Integration</span></li>
+                        </ul>
+                        <a th:href="@{/contact}" class="btn btn-primary">Get Started</a>
+                    </div>
+
+                    <!-- Plan 3 -->
+                    <div class="pricing-card glassmorphism">
+                        <div class="pricing-header">
+                            <h3>Enterprise Plan</h3>
+                            <div class="pricing-amount">
+                                <span class="price-num">$12,999</span>
+                                <span class="price-period">/ project</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> <span>Custom Scalable Systems</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>Unlimited Page Layouts</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>Complex SEO & Audit report</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>12 Months Priority Support</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>AWS Cloud Deployment (K8s)</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>Custom API / Webhook Engines</span></li>
+                        </ul>
+                        <a th:href="@{/contact}" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription Section -->
+        <section id="newsletter" class="section-padding" style="background-color: var(--bg-primary);">
+            <div class="container">
+                <div class="newsletter-card glassmorphism">
+                    <div class="bg-blur-orb1" style="width: 250px; height: 250px; top:-50px; right:-50px; opacity:0.6;"></div>
+                    <h2>Join the Forge Circle</h2>
+                    <p>Get monthly insights on web performance metrics, cloud infrastructure, and futuristic UI systems directly in your inbox.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer th:replace="~{layout :: footer}"></footer>
+
+    <!-- Scripts -->
+    <div th:replace="~{layout :: scripts}"></div>
+
+</body>
+</html>

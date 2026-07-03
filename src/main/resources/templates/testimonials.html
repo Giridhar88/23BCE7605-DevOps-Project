@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout :: head(~{::title})}">
+    <title>Testimonials & FAQs - PixelForge Studio</title>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header th:replace="~{layout :: header('testimonials')}"></header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Page Header -->
+        <section id="testimonials-intro" class="hero" style="min-height: auto; padding-top: 140px; padding-bottom: 3rem;">
+            <div class="bg-grid"></div>
+            <div class="container text-center" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 class="text-gradient" style="font-size: 3.5rem; margin-bottom: 1.5rem;">Trust Openly Earned</h1>
+                <p style="font-size: 1.2rem; color: var(--text-secondary);">Read client evaluations from technical founders and operations managers who rely on our software solutions.</p>
+            </div>
+        </section>
+
+        <!-- Testimonials List -->
+        <section id="reviews-list" class="section-padding" style="padding-top: 2rem;">
+            <div class="container">
+                <div class="testimonials-grid" style="grid-template-columns: repeat(3, 1fr) !important; gap: 2.5rem;">
+                    
+                    <!-- Review 1 -->
+                    <div class="testimonial-card glassmorphism">
+                        <div class="client-header">
+                            <div class="client-avatar" style="background: #3b82f6; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">SK</div>
+                            <div>
+                                <h4 class="client-name">Sarah Jenkins</h4>
+                                <p class="client-company">VP of Tech, ApexData</p>
+                            </div>
+                        </div>
+                        <div class="stars-list">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">&ldquo;PixelForge Studio delivered a web engine that handles half a million requests a day with next to zero latency. Their combination of design style and technical depth is exceptional.&rdquo;</p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="testimonial-card glassmorphism">
+                        <div class="client-header">
+                            <div class="client-avatar" style="background: #00f0ff; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0b0f19; font-family: var(--font-heading);">MR</div>
+                            <div>
+                                <h4 class="client-name">Marcus Reed</h4>
+                                <p class="client-company">Founder, VortexLabs</p>
+                            </div>
+                        </div>
+                        <div class="stars-list">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">&ldquo;The UI/UX design is clean, interactive, and premium. Our customers are constantly asking who built our platform. Can't recommend this team enough!&rdquo;</p>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="testimonial-card glassmorphism">
+                        <div class="client-header">
+                            <div class="client-avatar" style="background: #8b5cf6; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">EL</div>
+                            <div>
+                                <h4 class="client-name">Emma Larson</h4>
+                                <p class="client-company">Director of Operations, NovaCloud</p>
+                            </div>
+                        </div>
+                        <div class="stars-list">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">&ldquo;Their cloud strategy migration was flawless. We migrated our entire portal infrastructure to AWS without a single second of service disruption.&rdquo;</p>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="testimonial-card glassmorphism">
+                        <div class="client-header">
+                            <div class="client-avatar" style="background: #e11d48; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">DB</div>
+                            <div>
+                                <h4 class="client-name">David Vance</h4>
+                                <p class="client-company">Lead Architect, TechVibe</p>
+                            </div>
+                        </div>
+                        <div class="stars-list">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">&ldquo;The API specifications they delivered were clean, compliant, and instantly ready for integration. Outstanding communication throughout.&rdquo;</p>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="testimonial-card glassmorphism">
+                        <div class="client-header">
+                            <div class="client-avatar" style="background: #16a34a; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">TL</div>
+                            <div>
+                                <h4 class="client-name">Tasha Liang</h4>
+                                <p class="client-company">Product Lead, OctaneInc</p>
+                            </div>
+                        </div>
+                        <div class="stars-list">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">&ldquo;PixelForge optimized our viewport page speeds, making our mobile e-commerce client load 3x faster. Our conversion metrics showed an immediate uptick.&rdquo;</p>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="testimonial-card glassmorphism">
+                        <div class="client-header">
+                            <div class="client-avatar" style="background: #ca8a04; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #ffffff; font-family: var(--font-heading);">JH</div>
+                            <div>
+                                <h4 class="client-name">Johnathan H.</h4>
+                                <p class="client-company">CTO, CloudScale</p>
+                            </div>
+                        </div>
+                        <div class="stars-list">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">&ldquo;Security audits, API connections, and continuous deploy systems - PixelForge handles all core configurations brilliantly. A solid partner.&rdquo;</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion section -->
+        <section id="faq" class="section-padding" style="background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Have questions about how we launch designs and integrate servers? Here are some answers.</p>
+                </div>
+                
+                <div class="faq-list">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item glassmorphism">
+                        <button class="faq-question">
+                            <span>How do you handle backend integrations?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We build robust servers using Spring Boot (Java 21) or Node.js. All APIs map out correctly to clean controllers, and we ensure security configurations like OAuth2 and JWT are properly integrated before pushing to deployment.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item glassmorphism">
+                        <button class="faq-question">
+                            <span>Do you use templates or custom layouts?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Everything we build is hand-crafted. Our layouts rely on semantic HTML5 frameworks and custom styling variables to avoid template bloating and optimize rendering paint times on mobile viewport screens.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item glassmorphism">
+                        <button class="faq-question">
+                            <span>Is your code compatible with Docker?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Every project includes a multi-stage Dockerfile that packages the backend application safely. We use lightweight Alpine Linux runtime layers, keeping Docker image sizes small and fast to boot.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item glassmorphism">
+                        <button class="faq-question">
+                            <span>Do you offer post-launch maintenance?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. We provide dedicated support agreements ensuring regular version upgrades, security patch audits, server configurations monitoring, and viewport responsiveness audits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Preview Section -->
+        <section id="blog-panel" class="section-padding" style="background-color: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest Technical Insights</h2>
+                    <p>Read our latest posts about systems layouts, cloud virtualization, and rendering optimizations theories.</p>
+                </div>
+                
+                <div class="blog-grid">
+                    <!-- Blog Post 1 -->
+                    <div class="blog-card glassmorphism">
+                        <div class="blog-img-container">
+                            <span class="blog-date">July 2026</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <path d="M120 70h160v110H120z" fill="#1e293b" rx="6"/>
+                                <circle cx="200" cy="125" r="30" stroke="#00f0ff" stroke-width="2"/>
+                                <text x="200" y="210" fill="#e2e8f0" font-family="sans-serif" font-size="12" text-anchor="middle">Virtualization</text>
+                            </svg>
+                        </div>
+                        <div class="blog-info">
+                            <h3>Docker Container Design System</h3>
+                            <p>A deep dive on optimizing multi-stage builder images for lightweight JRE microservices deployment.</p>
+                            <a href="#" class="blog-read-more" onclick="alert('Simulated Blog: Docker Container Design System is a study on Alpine JVM optimizations.')">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 2 -->
+                    <div class="blog-card glassmorphism">
+                        <div class="blog-img-container">
+                            <span class="blog-date">June 2026</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <circle cx="200" cy="110" r="40" fill="#1e293b"/>
+                                <path d="M180 160h40v15h-40z" fill="#3b82f6" rx="2"/>
+                                <text x="200" y="210" fill="#e2e8f0" font-family="sans-serif" font-size="12" text-anchor="middle">Aesthetics</text>
+                            </svg>
+                        </div>
+                        <div class="blog-info">
+                            <h3>Designing Premium Dark Mode</h3>
+                            <p>Exploring details about high-contrast layout colors, glows, and variables for modern software platforms.</p>
+                            <a href="#" class="blog-read-more" onclick="alert('Simulated Blog: Designing Premium Dark Mode details variables configurations.')">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 3 -->
+                    <div class="blog-card glassmorphism">
+                        <div class="blog-img-container">
+                            <span class="blog-date">May 2026</span>
+                            <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;">
+                                <rect width="400" height="250" fill="#0f172a"/>
+                                <rect x="100" y="70" width="200" height="110" fill="#1e293b" rx="6"/>
+                                <path d="M140 100l60 50v-50z" fill="#9333ea"/>
+                                <text x="200" y="210" fill="#e2e8f0" font-family="sans-serif" font-size="12" text-anchor="middle">Algorithms</text>
+                            </svg>
+                        </div>
+                        <div class="blog-info">
+                            <h3>Viewport Rendering Optimizations</h3>
+                            <p>How we reduced layouts repaint and reflow cycles by 60% using requestAnimationFrame triggers.</p>
+                            <a href="#" class="blog-read-more" onclick="alert('Simulated Blog: Viewport Rendering Optimizations details requestAnimationFrame benchmarks.')">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer th:replace="~{layout :: footer}"></footer>
+
+    <!-- Scripts -->
+    <div th:replace="~{layout :: scripts}"></div>
+
+</body>
+</html>
