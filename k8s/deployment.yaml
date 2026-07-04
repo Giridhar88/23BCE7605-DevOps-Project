@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: studio
+  labels:
+    app: studio
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: studio
+  template:
+    metadata:
+      labels:
+        app: studio
+    spec:
+      containers:
+        - name: studio
+          image: studio:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
